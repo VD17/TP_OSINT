@@ -1,6 +1,6 @@
 from tools.urlscan import UrlScan
-#from tools.dnsscan import dnsScan
-#from tools.shodan import shodan
+from tools.dnscan import dnsScan
+from tools.shodan import Shodan
 
 import os
 import sys
@@ -15,17 +15,17 @@ import json
 
 def menu():
     while True:
-        print("Quel outils d'OSINT voulez-vous utilser ?:")
+        print("Quel outils voulez-vous utilser ? \n ")
         
-        print("1. DNS Scan")
+        print("1. Dnscan") # URGENT : A CORRIGER !!!!
         
-        print("2. Shodan")
+        print("2. Shodan") # URGENT : A CORRIGER !!!!
         
         print("3. TheHarvester")
         
-        print("4. urlscan.io")
+        print("4. urlscan")  # FONCTIONNEL 
         
-        print("0. Exit")
+        print("0. à bientot :) ")
         
 
         choice = input("Enter your choice: ")
@@ -34,16 +34,16 @@ def menu():
             
         elif choice == "1":
             domaine = input("Enter the target domain: ")
-            dnsScan(domaine)
+            dnscan(dns)
             
         elif choice == "2":
-            ip = input("Enter the Shodan query: ")
-            cle_api = input("Enter your Shodan API key: ")
-            shodan(ip, cle_api)
+            Ip = input("Insérez une IP cible : ") #NE FONCTIONNES PAS A CORRIGER
+            api_key = input("Insérez votre clé API shodan.io (Rendez-vous à : ' https://shodan.io/ ' pour en récupérer une ) :")
+            Shodan(Ip, api_key)
             
         elif choice == "3":
-            query = input("Enter the search query: ")
-            target = input("Enter the target domain: ")
+            query = input("A IMPLÉMNETER  ")
+            target = input("A IMPLEMENTER ")
             theHarvester.run(query, target)
             
         elif choice == "4":
