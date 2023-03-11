@@ -39,7 +39,7 @@ def menu():
         elif choice == "2":
             Ip = input("Insérez une IP cible : ") #NE FONCTIONNES PAS A CORRIGER
             api_key = input("Insérez votre clé API shodan.io (Rendez-vous à : ' https://shodan.io/ ' pour en récupérer une ) :")
-            Shodan(Ip, api_key)
+            Shodan(domain, api_key)
             
         elif choice == "3":
             query = input("A IMPLÉMNETER  ")
