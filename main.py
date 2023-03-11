@@ -1,6 +1,6 @@
 from tools.urlscan import UrlScan
-from tools.dnscan import dnsScan
-from tools.shodan import Shodan
+#from tools.dnscan import dnsScan
+#from tools.shodan import Shodan
 
 import os
 import sys
@@ -32,7 +32,7 @@ def menu():
         if choice == "0":
             break
             
-        elif choice == "1":
+        elif choice == "1": #NE FONCTIONNES PAS A CORRIGER
             domaine = input("Enter the target domain: ")
             dnscan(dns)
             
