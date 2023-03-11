@@ -1,10 +1,15 @@
 import requests
 import json
 
-def scanUrl(domain_name):
-    headers = {'API-Key': 'a35b2b44-d442-4b92-8ddf-f43b42365030', 'Content-Type': 'application/json'}
+def UrlScan(domain_name, api):
+    headers = {'API-Key': api , 'Content-Type': 'application/json'}
     data = {"url": f"{domain_name}", "visibility": "public"}
+    
     answer = requests.post('https://urlscan.io/api/v1/scan/', headers=headers, data=json.dumps(data))
-    print(answer)
+    
+    if answer.status_code != 200:
+       raise Exception(f"La requête a échoué avec le code {answer.status_code}")
+    
+    print("\n La requête a été exécutée avec succès : \n ", answer)
     a = answer.json()
-    print(a["result"])
+    print(a["result"], "\n")
