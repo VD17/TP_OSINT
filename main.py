@@ -38,7 +38,8 @@ def menu():
         elif choice == "2":
             domain = input("Insérez une IP cible (ex : 127.0.0.1) : ")
             api_key = input("Insérez votre clé API shodan.io (Rendez-vous à : ' https://shodan.io/ ' pour en récupérer une ) : \n ")
-            shodan_search(domain, api_key)
+            filename = input("Insérez un nom de fichier dans lequel votre résultat vas être enregistré : \n ")
+            shodan_search(domain, api_key, filename)
             
         elif choice == "3":     
             domain = input('Insérez le domaine cible : (ex : kali.org) ')
