@@ -40,19 +40,14 @@ def menu():
             api_key = input("Insérez votre clé API shodan.io (Rendez-vous à : ' https://shodan.io/ ' pour en récupérer une ) : \n ")
             shodan_search(domain, api_key)
             
-        elif choice == "3":
-            #query = input("A IMPLÉMNETER  ")
-            #target = input("A IMPLEMENTER ")
-            #theHarvester.run(query, target)
-            
-            domain = input('Insérez le domaine cible : ')
-            navigator = input ('Avec quel navigateur ? ')
+        elif choice == "3":     
+            domain = input('Insérez le domaine cible : (ex : kali.org) ')
+            navigator = input ('Avec quel navigateur ? (Vous pouvez utiliser les navigateurs connus tels que : google, bing ect ... si non utilisez ''all'' pour utiliser tous les navigateurs) : ')
             output = run_theharvester(domain, navigator)
             filename = f'{domain}.txt'
             with open(filename, 'w') as f:
                 f.write(output)
             print(f'Résultats enregsirés dans {filename}')
-    
     
         elif choice == "4":
             domain_name = input("Insérez le nom de domaine ciblé: ")

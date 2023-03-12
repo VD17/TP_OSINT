@@ -6,8 +6,8 @@ def run_theharvester(domain, navigator):
     return result.stdout
 
 if __name__ == '__main__':
-    domain = input('Enter the domain to search: ')
-    navigator = input ('Avec quel navigateur ? ')
+    #domain = input('Enter the domain to search: ')
+    #navigator = input ('Avec quel navigateur ?')
     output = run_theharvester(domain, navigator)
     print(output)
 
