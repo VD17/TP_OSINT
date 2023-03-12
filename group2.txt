@@ -1,0 +1,5 @@
+Groupe 2
+
+Projet réalise avec Mahmoud Boujbiri et Vishal Desai en classe de 3SI1.
+
+Lien du repo GIT : https://github.com/VD17/TP_OSINT.git
