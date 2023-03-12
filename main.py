@@ -1,6 +1,6 @@
 from tools.urlscan import UrlScan
 #from tools.dnscan import dnsScan
-#from tools.shodan import Shodan
+from tools.shodan import shodan_search
 
 import os
 import sys
@@ -36,10 +36,11 @@ def menu():
             domaine = input("Enter the target domain: ")
             dnscan(dns)
             
+            
         elif choice == "2":
-            Ip = input("Insérez une IP cible : ") #NE FONCTIONNES PAS A CORRIGER
-            api_key = input("Insérez votre clé API shodan.io (Rendez-vous à : ' https://shodan.io/ ' pour en récupérer une ) :")
-            Shodan(domain, api_key)
+            domain = input("Insérez une IP cible : ") #NE FONCTIONNES PAS A CORRIGER
+            api_key = input("Insérez votre clé API shodan.io (Rendez-vous à : ' https://shodan.io/ ' pour en récupérer une ) : \n ")
+            shodan_search(domain, api_key)
             
         elif choice == "3":
             query = input("A IMPLÉMNETER  ")

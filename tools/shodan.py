@@ -5,11 +5,14 @@ import requests
 from shodan import Shodan
 
 
-def Shodan(domain, api_key): 
+def shodan_search(domain, api_key): 
     api = Shodan(api_key)
     result = api.host(domain)
     
     pprint(result)
-
-
-# URGENT : A CORRIGER !!!!
+    
+    dom = result['domains']
+    ip = result['ip']
+    local = result['city']
+    
+    print(f"\n Résultat essentiels : \n domaine : {dom}   \n ip : {ip} \n Localication : {local} \n")
