@@ -4,12 +4,11 @@ from pprint import pprint
 import requests
 from shodan import Shodan
 
-
-def shodan_search(domain, api_key, filename):
+def shodan_search(domain, api_key, filename_suffix):
     api = Shodan(api_key)
     result = api.host(domain)
     
-    with open(filename, 'w') as f:
+    with open(f"shodan_{filename_suffix}", 'w') as f:
         json.dump(result, f, indent=4)
     
     org = result['org']
