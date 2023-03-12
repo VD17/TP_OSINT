@@ -4,7 +4,7 @@
  Mahmoud BOUJBIRI
  3SI1
  
-#Fonctionnalités
+# Fonctionnalités
 
 Les différentes options de menu permettent d'utiliser les outils suivants :
 
@@ -16,7 +16,7 @@ theHarvester: récupère les adresses e-mail et les domaines associés.
 
 urlscan: récupère les informations sur le domaine via l'API urlscan.io.
 
-#Utilisation
+# Utilisation
 
 Clonez le dépôt sur votre machine locale.
 
@@ -29,7 +29,7 @@ Exécutez le fichier main.py avec la commande suivante : python3 main.py.
 Suivez les instructions à l'écran pour utiliser les différents outils disponibles.
 
 
-#Options de menu
+# Options de menu
 
 Dnscan: permet de rechercher des noms de domaine à partir d'un nom de domaine cible. Cette option est fonctionnelle.
 
@@ -39,8 +39,8 @@ TheHarvester: permet de récupérer des adresses e-mail et des domaines associé
 urlscan: permet de récupérer des informations sur un domaine via l'API urlscan.io. Cette option est fonctionnelle.
 
 
-#Dépendances
-##Le script utilise les bibliothèques suivantes :
+# Dépendances
+## Le script utilise les bibliothèques suivantes :
 
 requests
 theHarvester
