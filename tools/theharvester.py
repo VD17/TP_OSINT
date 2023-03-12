@@ -6,9 +6,6 @@ def run_theharvester(domain, navigator): # récupere le nom de domaine et le nav
 
     return result.stdout 
 
-if __name__ == '__main__':
-
-
 
     output = run_theharvester(domain, navigator) 
     print(output)
