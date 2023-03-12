@@ -36,6 +36,7 @@ def menu():
             filename_suffix = input("Insérez un nom de fichier dans lequel votre résultat vas être enregistré : \n ">
             dnscan(domain, filename_suffix)
             print(f"Résultats enregistrés dans dnscan_{filename_suffix}.txt")
+
             
         elif choice == "2":
             domain = input("Insérez une IP cible (ex : 127.0.0.1) : ")
