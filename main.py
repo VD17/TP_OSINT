@@ -38,7 +38,7 @@ def menu():
             
             
         elif choice == "2":
-            domain = input("Insérez une IP cible : ") #NE FONCTIONNES PAS A CORRIGER
+            domain = input("Insérez une IP cible : ")
             api_key = input("Insérez votre clé API shodan.io (Rendez-vous à : ' https://shodan.io/ ' pour en récupérer une ) : \n ")
             shodan_search(domain, api_key)
             
