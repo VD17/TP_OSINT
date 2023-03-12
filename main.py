@@ -51,7 +51,7 @@ def menu(): # Menu interactif afin de sélectionner l'outil a exécuter.
             filename = f'{domain}.txt'# génère un fichier résultat au nom de domaine scané
             with open(filename, 'w') as f:
                 f.write(output)
-            print(f'Résultats enregsirés dans {filename}')
+            print(f'Résultats enregistrés dans {filename}')
     
         elif choice == "4": # boucle Urlscan
             domain_name = input("Insérez le nom de domaine ciblé (ex : kali.org) : ")# récupère le nom de domaine entré par l'utilisateur.
