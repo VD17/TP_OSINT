@@ -4,11 +4,9 @@ from tools.shodan import shodan_search
 
 import os
 import sys
-#import shodan
 import theHarvester
 import requests
 import json
-
 
 
 
@@ -19,9 +17,9 @@ def menu():
         
         print("1. Dnscan") # URGENT : A CORRIGER !!!!
         
-        print("2. Shodan") # URGENT : A CORRIGER !!!!
+        print("2. Shodan") # FONCTIONNEL 
         
-        print("3. TheHarvester")
+        print("3. TheHarvester") # URGENT : A CORRIGER !!!!
         
         print("4. urlscan")  # FONCTIONNEL 
         
