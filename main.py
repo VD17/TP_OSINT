@@ -1,5 +1,5 @@
 from tools.urlscan import UrlScan
-#from tools.dnscan import dnsScan
+from tools.dnscan import dnscan
 from tools.shodan import shodan_search
 
 import os
@@ -30,10 +30,9 @@ def menu():
         if choice == "0":
             break
             
-        elif choice == "1": #NE FONCTIONNES PAS A CORRIGER
-            domaine = input("Enter the target domain: ")
-            dnscan(dns)
-            
+        elif choice == "1": 
+            domain = input("Enter the target domain: ")
+            dnscan(domain)
             
         elif choice == "2":
             domain = input("Insérez une IP cible : ")
