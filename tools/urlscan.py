@@ -1,7 +1,7 @@
 import requests
 import json
 
-def UrlScan(domain_name, api):
+def UrlScan(domain_name, api, output_file):
     headers = {'API-Key': api , 'Content-Type': 'application/json'}
     data = {"url": f"{domain_name}", "visibility": "public"}
     
@@ -12,5 +12,8 @@ def UrlScan(domain_name, api):
     
     print("\n La requête a été exécutée avec succès : \n ", answer)
     a = answer.json()
-    print(a["result"], "\n")
     
+    with open(output_file, 'w') as f:
+        f.write(a["result"])
+        
+    print(f"Le lien urlscan.io a été enregistré dans le fichier {output_file}")
