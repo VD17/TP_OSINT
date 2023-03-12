@@ -43,10 +43,15 @@ urlscan: permet de récupérer des informations sur un domaine via l'API urlscan
 ## Le script utilise les bibliothèques suivantes :
 
 requests
+
 theHarvester
+
 dnspython
+
 shodan
+
 python-whois
+
 urlscan-api
 
 
