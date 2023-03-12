@@ -31,9 +31,11 @@ def menu():
         if choice == "0":
             break
             
-        elif choice == "1": 
+        elif choice == "1":
             domain = input("Insérez un nom de domaine cible: (ex : kali.org) ")
-            dnscan(domain)
+            filename = input("Insérez un nom de fichier dans lequel votre résultat vas être enregistré : \n ")
+            dnscan(domain, filename)
+            print(f"Résultats enregistrés dans {filename}")
             
         elif choice == "2":
             domain = input("Insérez une IP cible (ex : 127.0.0.1) : ")
