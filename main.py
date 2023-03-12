@@ -16,13 +16,13 @@ def menu():
     while True:
         print("Quel outils voulez-vous utilser ? \n ")
         
-        print("1. Dnscan") # FONCTIONNEL 
+        print("1. Dnscan") 
         
-        print("2. Shodan") # FONCTIONNEL 
+        print("2. Shodan") 
         
-        print("3. TheHarvester")  # FONCTIONNEL AVEC CRÉATION DE FICHIER
+        print("3. TheHarvester")  
         
-        print("4. urlscan")  # FONCTIONNEL 
+        print("4. urlscan")  
         
         print("0. à bientot :) ")
         
@@ -56,8 +56,8 @@ def menu():
         elif choice == "4":
             domain_name = input("Insérez le nom de domaine ciblé (ex : kali.org) : ")
             api = input("Insérez votre clé API urlscan.io (Rendez-vous à : ' https://urlscan.io/ ' pour en récupérer une ) : ")
-            output_file = input("Entrez le nom du fichier de sortie : ")
-            UrlScan(domain_name, api, output_file)
+            filename_suffix = input("Entrez le nom du fichier de sortie : ")
+            UrlScan(domain_name, api, filename_suffix)
 
             
             
