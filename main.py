@@ -33,15 +33,15 @@ def menu():
             
         elif choice == "1":
             domain = input("Insérez un nom de domaine cible: (ex : kali.org) ")
-            filename = input("Insérez un nom de fichier dans lequel votre résultat vas être enregistré : \n ")
-            dnscan(domain, filename)
-            print(f"Résultats enregistrés dans {filename}")
+            filename_suffix = input("Insérez un nom de fichier dans lequel votre résultat vas être enregistré : \n >
+            dnscan(domain, filename_suffix)
+            print(f"Résultats enregistrés dans dnscan_{filename_suffix}.txt")
             
         elif choice == "2":
             domain = input("Insérez une IP cible (ex : 127.0.0.1) : ")
-            api_key = input("Insérez votre clé API shodan.io (Rendez-vous à : ' https://shodan.io/ ' pour en récupérer une ) : \n ")
-            filename = input("Insérez un nom de fichier dans lequel votre résultat vas être enregistré : \n ")
-            shodan_search(domain, api_key, filename)
+            api_key = input("Insérez votre clé API shodan.io (Rendez-vous à : ' https://shodan.io/ ' pour en récupé>
+            filename_suffix = input("Insérez un nom de fichier dans lequel votre résultat vas être enregistré : \n >
+            shodan_search(domain, api_key, filename_suffix)
             
         elif choice == "3":     
             domain = input('Insérez le domaine cible : (ex : kali.org) ')
