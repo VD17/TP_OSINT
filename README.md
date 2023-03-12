@@ -57,5 +57,15 @@ python-whois
 
 urlscan-api
 
+os
+
+sys
+
+json
+
+pprint
+
+subprocess
+
 
 Les bibliothèques peuvent être installées via la commande : pip install -r requirements.txt
