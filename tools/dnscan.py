@@ -1,8 +1,7 @@
-from pprint import pprint
-
 import requests
 
 
-def dnscan(domain):
-
-    pprint(requests.get(f"https://networkcalc.com/api/dns/lookup/{domain}").json())
+def dnscan(domain, filename):
+    response = requests.get(f"https://networkcalc.com/api/dns/lookup/{domain}").text
+    with open(filename, 'w') as f:
+        f.write(response)
