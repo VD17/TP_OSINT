@@ -18,4 +18,4 @@ def shodan_search(domain, api_key, filename):
     ports = result['ports']
     local = result['city']
     
-    print(f"\n Résultats essentiels : \n Organisation : {org} \ Domain(s) : {'n '.join(dom)} \n IP : {ip_str} \n Ports : {', '.join(map(str, ports))}\n Localisation : {local} \n")
+    print(f"\n Résultats essentiels : \n Organisation : {org} \n Domain(s) : {'n '.join(dom)} \n IP : {ip_str} \n Ports : {', '.join(map(str, ports))}\n Localisation : {local} \n")
