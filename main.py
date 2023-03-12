@@ -32,11 +32,11 @@ def menu():
             break
             
         elif choice == "1": 
-            domain = input("Insérez un nom de domaine cible: ")
+            domain = input("Insérez un nom de domaine cible: (ex : kali.org) ")
             dnscan(domain)
             
         elif choice == "2":
-            domain = input("Insérez une IP cible : ")
+            domain = input("Insérez une IP cible (ex : 127.0.0.1) : ")
             api_key = input("Insérez votre clé API shodan.io (Rendez-vous à : ' https://shodan.io/ ' pour en récupérer une ) : \n ")
             shodan_search(domain, api_key)
             
@@ -50,12 +50,12 @@ def menu():
             print(f'Résultats enregsirés dans {filename}')
     
         elif choice == "4":
-            domain_name = input("Insérez le nom de domaine ciblé: ")
+            domain_name = input("Insérez le nom de domaine ciblé (ex : kali.org) : ")
             api = input("Insérez votre clé API urlscan.io (Rendez-vous à : ' https://urlscan.io/ ' pour en récupérer une ) : ")
             UrlScan(domain_name, api)
             
         else:
-            print("Invalid choice")
+            print("RESTE CONCENTRÉ AUSSI, ON T'AS DIT 1 2 3 OU 4")
 
 if __name__ == '__main__':
 
