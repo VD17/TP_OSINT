@@ -54,6 +54,7 @@ def menu():
             api = input("Insérez votre clé API urlscan.io (Rendez-vous à : ' https://urlscan.io/ ' pour en récupérer une ) : ")
             UrlScan(domain_name, api)
             
+            
         else:
             print("Veuillez choisir entre les options qui vous sont proposées (0, 1, 2, 3 et 4)")
 

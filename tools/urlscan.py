@@ -13,3 +13,4 @@ def UrlScan(domain_name, api):
     print("\n La requête a été exécutée avec succès : \n ", answer)
     a = answer.json()
     print(a["result"], "\n")
+    
