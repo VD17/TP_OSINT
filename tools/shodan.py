@@ -11,8 +11,10 @@ def shodan_search(domain, api_key):
     
     pprint(result)
     
+    org = result['org']
     dom = result['domains']
     ip = result['ip']
+    ports = result['ports']
     local = result['city']
     
-    print(f"\n Résultat essentiels : \n domaine : {dom}   \n ip : {ip} \n Localication : {local} \n")
+    print(f"\n Résultat essentiels :\n organsation : {organisation} \n domaine : {dom}   \n ip : {ip} \n ports : {ports} \n Localication : {local} \n")
