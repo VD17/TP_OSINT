@@ -40,7 +40,7 @@ urlscan: permet de récupérer des informations sur un domaine via l'API urlscan
 
 
 # Dépendances
-## Le script utilise les bibliothèques suivantes :
+## Le script utilise les bibliothèques suivantes : 
 
 requests
 
