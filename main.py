@@ -55,7 +55,7 @@ def menu():
             UrlScan(domain_name, api)
             
         else:
-            print("RESTE CONCENTRÉ AUSSI, ON T'AS DIT 1 2 3 OU 4")
+            print("Veuillez choisir entre les options qui vous sont proposées (0, 1, 2, 3 et 4)")
 
 if __name__ == '__main__':
 
