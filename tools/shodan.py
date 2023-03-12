@@ -5,16 +5,17 @@ import requests
 from shodan import Shodan
 
 
-def shodan_search(domain, api_key): 
+def shodan_search(domain, api_key, filename):
     api = Shodan(api_key)
     result = api.host(domain)
     
-    pprint(result)
+    with open(filename, 'w') as f:
+        json.dump(result, f, indent=4)
     
     org = result['org']
     dom = result['domains']
-    ip = result['ip']
+    ip_str = result['ip_str']
     ports = result['ports']
     local = result['city']
     
-    print(f"\n Résultat essentiels :\n organsation : {organisation} \n domaine : {dom}   \n ip : {ip} \n ports : {ports} \n Localication : {local} \n")
+    print(f"\n Résulatats essentiels : \n Organisation : {org} \ Domain(s) : {'n '.join(dom)} \n IP : {ip_str} \n Ports : {', '.join(map(str, pots))}\n Localisation : {local} \n")
