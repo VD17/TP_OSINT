@@ -55,7 +55,9 @@ def menu():
         elif choice == "4":
             domain_name = input("Insérez le nom de domaine ciblé (ex : kali.org) : ")
             api = input("Insérez votre clé API urlscan.io (Rendez-vous à : ' https://urlscan.io/ ' pour en récupérer une ) : ")
-            UrlScan(domain_name, api)
+            output_file = input("Entrez le nom du fichier de sortie : ")
+            UrlScan(domain_name, api, output_file)
+
             
             
         else:
