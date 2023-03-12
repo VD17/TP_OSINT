@@ -20,7 +20,7 @@ def menu():
         
         print("2. Shodan") # FONCTIONNEL 
         
-        print("3. TheHarvester") # URGENT : A CORRIGER !!!!
+        print("3. TheHarvester")  # FONCTIONNEL AVEC CRÉATION DE FICHIER
         
         print("4. urlscan")  # FONCTIONNEL 
         
